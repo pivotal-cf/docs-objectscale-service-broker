@@ -1,6 +1,6 @@
 ## Link to Published Content
 
-https://docs.pivotal.io/partners/ecs-service-broker/
+https://docs.pivotal.io/partners/objectscale-service-broker/
 
 ## Pivotal Partners Template
 

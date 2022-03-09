@@ -17,7 +17,7 @@ sections:
   - repository:
       name: docs-content
     directory: objectscale-service-broker
-    subnav_template: objectscale-service-broker_subnav.erb
+    subnav_template: objectscale-service-broker_master_subnav.erb
 
 template_variables:                             # optional
 

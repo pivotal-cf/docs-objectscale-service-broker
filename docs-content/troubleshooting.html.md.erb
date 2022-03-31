@@ -1,28 +1,27 @@
 ---
-title: Troubleshooting ECS Service Broker for VMware Tanzu
+title: Troubleshooting ObjectScale Service Broker for VMware Tanzu
 owner: Partners
 ---
 
 This document describes troubleshooting steps and common issues when running the
-ECS Service Broker for VMware Tanzu.
+ObjectScale Service Broker for VMware Tanzu.
 
 
 # <a id="collecting-logs"></a> Collecting Logs
 
-The ECS Service Broker is installed through a tile in Operations Manager, so when an
+The Service Broker is installed through a tile in Operations Manager, so when an
 installation fails, collecting logs from Ops Manager is helpful. To do this,
 navigate to the Ops Manager Installation Dashboard and select **Change Log**.
-Find the entry for the ECS VMware Tanzu Service Broker and click
+Find the entry for the ObjectScale VMware Tanzu Service Broker and click
 **Logs**. The logs will be displayed for the following BOSH errands:
 
-* Installing Dell EMC ECS Broker
-* Running errand deploy-service-broker for DELL EMC ECS Broker
-* Running errand register-broker for DELL EMC ECS Broker
+* Installing Objectscale Service Broker
+* Running errand deploy-all for Objectscale Service Broker
 
 If you encounter errors during run time, or more detailed logs are required,
 you can also collect logs from the deployed application. To find these
 logs, navigate to the VMware Tanzu Apps Manager tile. Find the organization and space for the
-ECS Broker, which is typically `ecs-broker-service-org` and `ecs-broker-service-space`.
+ECS Broker, which is typically `objectscale-service-broker-org` and `objectscale-service-broker-space`.
 From there, you can view detailed application logs.
 
 
@@ -31,9 +30,9 @@ From there, you can view detailed application logs.
 For the most part, issues with the broker are a result of incorrect configuration.
 Here are some general things to check, which commonly resolve issues:
 
-1. Make sure you have HTTP connectivity to both the ECS management API, which
-typically runs on port `4443`, and ECS S3 service, which will run on port `9020` (HTTP)
-and port `9021` (HTTPS). If you are accessing ECS through a load-balancer, these port numbers may be different.
+1. Make sure you have HTTP connectivity to both the management API, which
+typically runs on port `4443`, and ECS S3 service, which will run on port `443`.
+If you are accessing ECS through a load-balancer, these port numbers may be different.
 To test access to these ports, use the CURL command from a Linux or Mac
 OS host:
 <pre class='terminal'>

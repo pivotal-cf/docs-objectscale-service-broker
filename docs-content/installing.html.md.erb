@@ -1,30 +1,30 @@
 ---
-title: Installing and Configuring Objectscale Service Broker for VMware Tanzu
+title: Installing and Configuring ObjectScale Service Broker for VMware Tanzu
 owner: Partners
 ---
 
-This topic describes how to install and configure Objectscale Service Broker for VMware Tanzu.
+This topic describes how to install and configure ObjectScale Service Broker for VMware Tanzu.
 
 
-## <a id='install'></a> Install and Configure Objectscale Service Broker for VMware Tanzu
+## <a id='install'></a> Install and Configure ObjectScale Service Broker for VMware Tanzu
 
-The Objectscale Service Broker installs as a single VMware Tanzu-deployed application, which makes API calls to an externally-hosted Dell Objectscale instance.
-The broker uses a combination of the Objectscale Gateway API, Objectstore `management` API and the S3 API (which runs on ports `9020`/`HTTP` and `9021`/`HTTPS`).
+The ObjectScale Service Broker installs as a single VMware Tanzu-deployed application, which makes API calls to an externally-hosted Dell ObjectScale instance.
+The broker uses a combination of the ObjectScale Gateway API, ObjectStore management API and the ObjectStore S3 API.
 
 To install the service broker, you must configure the broker application to connect to the APIs. Also, you may also customize the services and plans offered in the VMware Tanzu marketplace with additional pages in the Tile interface.
 
-To start running the Objectscale broker, do the following:
+To start running the ObjectScale broker, do the following:
 
 1. Download the product file from [Pivotal Network](https://network.pivotal.io/products/ecs-cf-broker).
 
 1. Navigate to the Ops Manager Installation Dashboard and click **Import a Product** to upload the product file.
 
-1. Under the **Import a Product** button, click **+** next to the version number of Objectscale Service Broker for VMware Tanzu. This adds the tile to your staging area.
+1. Under the **Import a Product** button, click **+** next to the version number of ObjectScale Service Broker for VMware Tanzu. This adds the tile to your staging area.
 
-1. Click the newly added **Objectscale Service Broker for VMware Tanzu** tile.
+1. Click the newly added **ObjectScale Service Broker for VMware Tanzu** tile.
 
 
-## <a id='install'></a> Configure Objectscale Service Broker for VMware Tanzu
+## <a id='install'></a> Configure ObjectScale Service Broker for VMware Tanzu
 
 1. Navigate to **Assign AZs and Networks** and confirm that the default Availability Zones and Network fields are correct.
 
